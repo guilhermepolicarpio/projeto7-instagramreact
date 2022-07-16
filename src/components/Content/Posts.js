@@ -3,7 +3,7 @@ import Post from "./Post"
 export default function Posts(){
 
      const posts=[
-        {source:"", user:"gui",content:"",likeName:"",likeImage:"", likeCount:""},
+        {source:"assets/img/meowed.svg", user:"meowed",content:"assets/img/gato-telefone.svg",likeName:"respondeai",likeImage:"assets/img/respondeai.svg", likeCount:"101.523"},
         {source:"", user:"",content:"",likeName:"",likeImage:"", likeCount:""}
     ]
 return(

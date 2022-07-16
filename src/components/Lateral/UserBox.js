@@ -1,12 +1,12 @@
 import React from "react";
-export default function UserBox(props){
+export default function UserBox(){
     return(
-    <div class="lateral-box">
-                <img src={"assets/img" + props.username +".jpg"}/>
-                <div>
-                    <p>{props.username}</p> 
-                    <p>{props.name}</p>
-                </div>
-    </div>
+        <div class="usuario">
+            <img src="assets/img/catanacomics.svg" />
+            <div class="texto">
+                <strong>catanacomics</strong>
+                Catana
+            </div>
+      </div>
     )
 }

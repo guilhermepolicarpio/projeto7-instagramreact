@@ -1,12 +1,11 @@
 import NavBar from "./components/NavBar";
-import Conteudo from "./components/Conteudo";
+import Body from "./components/Body";
 
 export default function App(){
     return (
-
         <div>
-            <NavBar class="topo"/>
-            <Conteudo />
+            <NavBar/>
+            <Body/>
         </div>
         );
 }
