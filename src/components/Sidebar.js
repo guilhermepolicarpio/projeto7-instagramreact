@@ -12,4 +12,5 @@ export default function Sidebar(){
         <Links/>
         <Copyright/>
     </div>
-            )}
+            )
+}

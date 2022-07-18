@@ -1,10 +1,9 @@
 import Post from "./Post"
-
 export default function Posts(){
 
      const posts=[
         {source:"assets/img/meowed.svg", user:"meowed",content:"assets/img/gato-telefone.svg",likeName:"respondeai",likeImage:"assets/img/respondeai.svg", likeCount:"101.523"},
-        {source:"", user:"",content:"",likeName:"",likeImage:"", likeCount:""}
+        {source:"assets/img/barked.svg", user:"barked",content:"assets/img/dog.svg",likeName:"adorable_animals",likeImage:"assets/img/adorable_animals.svg", likeCount:"99.159"}
     ]
 return(
     <>

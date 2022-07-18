@@ -1,12 +1,21 @@
-import React from "react";
 export default function UserBox(){
+
+    const users=[
+        {source: "assets/img/catanacomics.svg", username: "catanacomics", user:"Catana"}
+    ];
+
     return(
+<>
+        {users.map(props => (
         <div class="usuario">
-            <img src="assets/img/catanacomics.svg" />
+            <img src={props.source} />
             <div class="texto">
-                <strong>catanacomics</strong>
-                Catana
+                <strong>{props.username}</strong>
+                {props.user}
             </div>
-      </div>
+       </div>
+      
+    ))}
+    </>
     )
 }
