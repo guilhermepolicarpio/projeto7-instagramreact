@@ -2,7 +2,24 @@ import React from "react";
 
 export default function Post(props){
 
+    const [liked, setLiked] = React.useState("hidden");
     const{source, user,content,likeName,likeImage, likeCount} = props;
+
+
+    let IonIconClass = "";
+    if(liked === "red"){
+        IonIconClass = "hidden";
+   }
+   
+   function likePost(){
+       if(liked === "red"){
+           setLiked("hidden");
+           IonIconClass = "";
+       }else{
+            setLiked("red");
+            IonIconClass = "hidden"
+       }
+   }
 
     return(
 <div class="posts">
@@ -17,14 +34,15 @@ export default function Post(props){
     </div>
   </div>
 
-  <div class="conteudo">
+  <div class="conteudo" onClick={() => setLiked("red")}>
     <img src={content} />
   </div>
 
   <div class="fundo">
     <div class="acoes">
       <div>
-        <ion-icon name="heart-outline"></ion-icon>
+      <ion-icon class={IonIconClass + " control"} onClick={likePost} name="heart-outline"></ion-icon>
+      <ion-icon class={liked + " control"} onClick={likePost} name="heart"></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>
         <ion-icon name="paper-plane-outline"></ion-icon>
       </div>
