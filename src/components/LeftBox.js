@@ -7,7 +7,7 @@ export default function LeftBox (){
     
         <div class="esquerda">
             <Stories/>
-            <Posts class="stories"/>
+            <Posts />
         </div>
 
     );

@@ -41,8 +41,8 @@ export default function Post(props){
   <div class="fundo">
     <div class="acoes">
       <div>
-      <ion-icon class={IonIconClass + " control"} onClick={likePost} name="heart-outline"></ion-icon>
-      <ion-icon class={liked + " control"} onClick={likePost} name="heart"></ion-icon>
+      <ion-icon class={IonIconClass + " md hydrated"} onClick={likePost} name="heart-outline"></ion-icon>
+      <ion-icon class={liked + " md hydrated"} onClick={likePost} name="heart"></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>
         <ion-icon name="paper-plane-outline"></ion-icon>
       </div>
